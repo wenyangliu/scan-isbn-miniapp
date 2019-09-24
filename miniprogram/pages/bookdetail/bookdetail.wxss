@@ -19,23 +19,39 @@
   border-bottom: 2rpx solid #ccc;
   padding: 20rpx;
 }
-.userinfo {
-  width: 30%;
-}
+
 .userinfo_top {
   display: flex;
 }
 .avatar_con {
   padding-right: 20rpx;
+  padding-top: 10rpx;
 }
 .avatar {
   width: 50rpx;
   height: 50rpx;
   border-radius: 50%;
 }
-.coninfo {
-  width: 70%;
+
+.user .username {
+  font-size: 28rpx;
+  font-weight: 600;
+}
+.user .userrate {
+  display: flex;
+  line-height: 24rpx;
+}
+.user .date {
+  font-size: 24rpx;
+  color: #ccc;
+  padding-left: 20rpx;
+}
+.userinfo_bottom .content {
+  font-size: 26rpx;
+  color: #333;
 }
 .summary {
   padding: 20rpx;
+  font-size: 26rpx;
+  color: #333;
 }

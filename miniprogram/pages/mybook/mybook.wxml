@@ -8,7 +8,7 @@
         <view class="item-wrap" bindtap="gotoDetail" data-item="{{item}}">
           <van-card price="{{item.price}}" desc="{{item.author}} / {{dateFr.formatDate(item.create_time)}} / {{item.publisher}}" title="{{item.title}}" thumb="{{item.image}}">
             <view slot="tags" class="rate">
-              <van-rate value="{{item.rate / 2}}" size="{{ 14 }}" />
+              <van-rate readonly value="{{item.rate / 2}}" size="{{ 14 }}" />
               <text class="rate-text">{{item.rate}}</text>
             </view>
           </van-card>

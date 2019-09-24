@@ -2,7 +2,7 @@
 <view>
   <van-card price="{{bookDetail.price}}" desc="{{bookDetail.author}} / {{dateFr.formatDate(bookDetail.create_time)}} / {{bookDetail.publisher}}" title="{{bookDetail.title}}" thumb="{{bookDetail.image}}">
     <view slot="tags" class="rate">
-      <van-rate value="{{bookDetail.rate / 2}}" size="{{ 14 }}" />
+      <van-rate readonly value="{{bookDetail.rate / 2}}" size="{{ 14 }}" />
       <text class="rate-text">{{bookDetail.rate}}</text>
     </view>
     <view slot="footer" class="tags">
@@ -21,18 +21,19 @@
         <view class="userinfo">
           <view class="userinfo_top">
             <view class="avatar_con">
-            <image class="avatar" src="{{comment.img}}"></image>
+              <image class="avatar" src="{{comment.img}}"></image>
           </view>
-          <text class="user">{{comment.user}}</text>
+          <view class="user">
+            <view class="username">{{comment.user}}</view>
+            <view class="userrate">
+              <van-rate readonly value="{{comment.rate}}" size="{{ 10 }}" />
+              <text class="date">{{comment.date}}</text>
+            </view>
+          </view>
           </view>
           <view class="userinfo_bottom">
-            <text class="date">{{comment.date}}</text>
+            <view class="content">{{comment.content}}</view>
           </view>
-        </view>
-        <view class="coninfo">
-          <van-rate value="{{comment.rate}}" size="{{ 14 }}" />
-          
-          <view class="content">{{comment.content}}</view>
         </view>
       </view>
   </view>
