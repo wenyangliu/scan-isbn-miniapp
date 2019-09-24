@@ -2,9 +2,11 @@
 
 ## 效果图展示
 
-![首页](https://i.loli.net/2019/09/24/EdC4FJO3PvyXk2p.png)
-![我的](https://i.loli.net/2019/09/24/RdhyLtlWUPVmNBF.png)
-![左滑删除](https://i.loli.net/2019/09/24/DNpYhQTHKdsBURl.png)
+<img src="https://i.loli.net/2019/09/24/EdC4FJO3PvyXk2p.png" width = "414" height = "896" alt="首页" />
+
+<img src="https://i.loli.net/2019/09/24/RdhyLtlWUPVmNBF.png" width = "414" height = "896" alt="我的" />
+
+<img src="https://i.loli.net/2019/09/24/DNpYhQTHKdsBURl.png" width = "414" height = "896" alt="左滑删除" />
 
 ## 参考文档
 
