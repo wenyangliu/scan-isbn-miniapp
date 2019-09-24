@@ -1,0 +1,43 @@
+<wxs module="dateFr" src="../../filter.wxs"></wxs>
+<view>
+  <van-card price="{{bookDetail.price}}" desc="{{bookDetail.author}} / {{dateFr.formatDate(bookDetail.create_time)}} / {{bookDetail.publisher}}" title="{{bookDetail.title}}" thumb="{{bookDetail.image}}">
+    <view slot="tags" class="rate">
+      <van-rate value="{{bookDetail.rate / 2}}" size="{{ 14 }}" />
+      <text class="rate-text">{{bookDetail.rate}}</text>
+    </view>
+    <view slot="footer" class="tags">
+      <view wx:for="{{bookDetail.tags}}" wx:for-item="tag" wx:for-index="idx" wx:key="idx">
+        <view wx:if="{{idx < 5}}">
+          <van-tag round type="primary" class="tag">{{tag.title}}</van-tag>
+        </view>
+      </view>
+    </view>
+  </van-card>
+</view>
+<view class="title">精选评论</view>
+<view class="comments">
+  <view wx:for="{{bookDetail.comments}}" wx:for-item="comment" wx:for-index="idx" wx:key="idx">
+      <view class="comment">
+        <view class="userinfo">
+          <view class="userinfo_top">
+            <view class="avatar_con">
+            <image class="avatar" src="{{comment.img}}"></image>
+          </view>
+          <text class="user">{{comment.user}}</text>
+          </view>
+          <view class="userinfo_bottom">
+            <text class="date">{{comment.date}}</text>
+          </view>
+        </view>
+        <view class="coninfo">
+          <van-rate value="{{comment.rate}}" size="{{ 14 }}" />
+          
+          <view class="content">{{comment.content}}</view>
+        </view>
+      </view>
+  </view>
+</view>
+<view class="title">本书简介</view>
+<view class="summary">
+  {{bookDetail.summary}}
+</view>

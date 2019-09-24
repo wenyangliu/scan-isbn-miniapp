@@ -1,0 +1,41 @@
+.tags {
+  display: flex;
+}
+.tag {
+  display: flex;
+  margin: 20rpx 20rpx 20rpx 0;
+}
+.rate {
+  display: flex
+}
+.rate-text {
+  font-size: 24rpx;
+}
+.comments {
+  padding: 20rpx 0;
+}
+.comment {
+  display: flex;
+  border-bottom: 2rpx solid #ccc;
+  padding: 20rpx;
+}
+.userinfo {
+  width: 30%;
+}
+.userinfo_top {
+  display: flex;
+}
+.avatar_con {
+  padding-right: 20rpx;
+}
+.avatar {
+  width: 50rpx;
+  height: 50rpx;
+  border-radius: 50%;
+}
+.coninfo {
+  width: 70%;
+}
+.summary {
+  padding: 20rpx;
+}

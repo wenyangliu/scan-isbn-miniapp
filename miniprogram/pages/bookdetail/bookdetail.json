@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "详情",
+  "usingComponents": {
+    "van-card": "vant-weapp/card",
+    "van-tag": "vant-weapp/tag",
+    "van-rate": "vant-weapp/rate"
+  }
+}
